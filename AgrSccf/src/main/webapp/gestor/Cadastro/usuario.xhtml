@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"                
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="/gestor/resources/main.xhtml">
+
+    <ui:define name="tarefas">
+        <p:fieldset legend="Cadastrar de Usuario" style="margin-left: auto; margin-right: auto">
+            <h:form prependId="false" id="formCatprod">                    
+                <p:growl id="msg" life="30000"/> 
+                <h:panelGrid columns="3" style="border: none; margin-left: auto; margin-right: auto">
+                    <p:outputLabel value="Codigo.:" style="float: right; margin-left: 0px"/>
+                    <p:inputText id="verdatarec" size="10" value="Aqui" readonly="true"/>
+                    <h:inputHidden/>
+                    <p:outputLabel value="Nome do Paciente.:" style="float: right; margin-left: 0px"/>                    
+                    <p:inputText id="verdatare" size="100" value="Alessandro Geraldo Ramos" readonly="true"/>
+                    <p:button value=".." image="ui-icon ui-icon-disk" style="margin-left: 5px"/>
+                </h:panelGrid>
+                <h:panelGrid columns="3" style="margin-left: auto; margin-right: auto; margin-top: 15px">
+                    <p:commandButton value="Salvar" 
+                                     action="aqui}" 
+                                     image="ui-icon ui-icon-disk" 
+                                     update="@form"
+                                     style="margin-right: 100px"/>
+              
+                    <p:commandButton value="Cancelar" 
+                                     actionListener="aqui}" 
+                                     image="ui-icon ui-icon-close" 
+                                     update="@form"
+                                     style="margin-left: 100px"/>
+                </h:panelGrid>
+            </h:form>
+        </p:fieldset>
+        
+    </ui:define>
+
+</ui:composition>

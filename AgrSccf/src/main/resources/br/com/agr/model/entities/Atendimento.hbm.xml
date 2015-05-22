@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Atendimento" table="atendimento" schema="public" optimistic-lock="version">
+        <id name="atendimentoId" type="int">
+            <column name="atendimento_id" />
+              <generator class="sequence">
+                <param name="sequence">atendimento_atendimento_id_seq</param>
+              </generator>
+        </id>
+        <property name="atendimentoCodigoPaciente" type="java.lang.Integer">
+            <column name="atendimento_codigo_paciente" />
+        </property>
+        <property name="atendimentoCodigoExame" type="java.lang.Integer">
+            <column name="atendimento_codigo_exame" />
+        </property>
+        <property name="atendimentoCodigoMedico" type="java.lang.Integer">
+            <column name="atendimento_codigo_medico" />
+        </property>
+        <property name="atendimentoCodigoPlano" type="java.lang.Integer">
+            <column name="atendimento_codigo_plano" />
+        </property>
+        <property name="atendimentoResponsavelLaudo" type="java.lang.Integer">
+            <column name="atendimento_responsavel_laudo" />
+        </property>
+        <property name="atendimentoRealizado" type="java.lang.Boolean">
+            <column name="atendimento_realizado" />
+        </property>
+        <property name="atendimentoLaudo" type="java.lang.Boolean">
+            <column name="atendimento_laudo" />
+        </property>
+        <property name="atendimentoEntregue" type="java.lang.Boolean">
+            <column name="atendimento_entregue" />
+        </property>
+    </class>
+</hibernate-mapping>

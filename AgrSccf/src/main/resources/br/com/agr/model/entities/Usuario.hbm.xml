@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Usuario" table="usuario" schema="public" optimistic-lock="version">
+        <id name="usuarioId" type="int">
+            <column name="usuario_id" />
+              <generator class="sequence">
+                <param name="sequence">usuario_usuario_id_seq</param>
+              </generator>
+        </id>
+        <property name="usuarioLogin" type="string">
+            <column name="usuario_login" length="80" />
+        </property>
+        <property name="usuarioNome" type="string">
+            <column name="usuario_nome" length="30" />
+        </property>
+        <property name="usuarioSenha" type="string">
+            <column name="usuario_senha" length="100" />
+        </property>
+        <property name="usuarioPermicao" type="string">
+            <column name="usuario_permicao" length="80" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Exame" table="exame" schema="public" optimistic-lock="version">
+        <id name="exameId" type="int">
+            <column name="exame_id" />
+              <generator class="sequence">
+                <param name="sequence">exame_exame_id_seq</param>
+              </generator>
+        </id>
+        <property name="exameNome" type="string">
+            <column name="exame_nome" length="80" />
+        </property>
+        <property name="exameDesc" type="string">
+            <column name="exame_desc" length="500" />
+        </property>
+    </class>
+</hibernate-mapping>

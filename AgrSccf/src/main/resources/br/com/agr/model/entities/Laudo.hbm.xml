@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Laudo" table="laudo" schema="public" optimistic-lock="version">
+        <id name="laudoId" type="int">
+            <column name="laudo_id" />
+              <generator class="sequence">
+                <param name="sequence">laudo_laudo_id_seq</param>
+              </generator>
+        </id>
+        <property name="laudoNome" type="string">
+            <column name="laudo_nome" length="50" />
+        </property>
+        <property name="laudoCrm" type="string">
+            <column name="laudo_crm" length="20" />
+        </property>
+        <property name="laudoLogradoro" type="string">
+            <column name="laudo_logradoro" length="80" />
+        </property>
+        <property name="laudoNumero" type="string">
+            <column name="laudo_numero" length="20" />
+        </property>
+        <property name="laudoComplemento" type="string">
+            <column name="laudo_complemento" length="30" />
+        </property>
+        <property name="laudoBairro" type="string">
+            <column name="laudo_bairro" length="50" />
+        </property>
+        <property name="laudoCidade" type="string">
+            <column name="laudo_cidade" length="50" />
+        </property>
+        <property name="laudoMg" type="string">
+            <column name="laudo_mg" length="2" />
+        </property>
+        <property name="laudoCep" type="string">
+            <column name="laudo_cep" length="20" />
+        </property>
+        <property name="laudoTelefone" type="string">
+            <column name="laudo_telefone" length="20" />
+        </property>
+        <property name="laudoCelular" type="string">
+            <column name="laudo_celular" length="20" />
+        </property>
+        <property name="laudoMail" type="string">
+            <column name="laudo_mail" length="80" />
+        </property>
+    </class>
+</hibernate-mapping>

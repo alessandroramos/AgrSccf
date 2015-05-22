@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Paciente" table="paciente" schema="public" optimistic-lock="version">
+        <id name="pacienteId" type="int">
+            <column name="paciente_id" />
+              <generator class="sequence">
+                <param name="sequence">paciente_paciente_id_seq</param>
+              </generator>
+        </id>
+        <property name="pacienteNome" type="string">
+            <column name="paciente_nome" length="50" />
+        </property>
+        <property name="pacienteCpf" type="string">
+            <column name="paciente_cpf" length="20" />
+        </property>
+        <property name="pacienteRg" type="string">
+            <column name="paciente_rg" length="50" />
+        </property>
+        <property name="pacienteLogradoro" type="string">
+            <column name="paciente_logradoro" length="80" />
+        </property>
+        <property name="pacienteNumero" type="string">
+            <column name="paciente_numero" length="20" />
+        </property>
+        <property name="pacienteComplemento" type="string">
+            <column name="paciente_complemento" length="30" />
+        </property>
+        <property name="pacienteBairro" type="string">
+            <column name="paciente_bairro" length="50" />
+        </property>
+        <property name="pacienteCidade" type="string">
+            <column name="paciente_cidade" length="50" />
+        </property>
+        <property name="pacienteMg" type="string">
+            <column name="paciente_mg" length="2" />
+        </property>
+        <property name="pacienteCep" type="string">
+            <column name="paciente_cep" length="20" />
+        </property>
+        <property name="pacienteTelefone" type="string">
+            <column name="paciente_telefone" length="20" />
+        </property>
+        <property name="pacienteCelular" type="string">
+            <column name="paciente_celular" length="20" />
+        </property>
+        <property name="pacienteMail" type="string">
+            <column name="paciente_mail" length="80" />
+        </property>
+        <property name="pacientePai" type="string">
+            <column name="paciente_pai" length="50" />
+        </property>
+        <property name="pacienteMae" type="string">
+            <column name="paciente_mae" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

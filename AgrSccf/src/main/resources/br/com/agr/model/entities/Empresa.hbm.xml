@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Empresa" table="empresa" schema="public" optimistic-lock="version">
+        <id name="empresaId" type="int">
+            <column name="empresa_id" />
+              <generator class="sequence">
+                <param name="sequence">empresa_empresa_id_seq</param>
+              </generator>
+        </id>
+        <property name="empresaNome" type="string">
+            <column name="empresa_nome" length="50" />
+        </property>
+        <property name="empresaRazao" type="string">
+            <column name="empresa_razao" length="50" />
+        </property>
+        <property name="empresaLogradoro" type="string">
+            <column name="empresa_logradoro" length="50" />
+        </property>
+        <property name="empresaNumero" type="string">
+            <column name="empresa_numero" length="20" />
+        </property>
+        <property name="empresaComplemento" type="string">
+            <column name="empresa_complemento" length="40" />
+        </property>
+        <property name="empresaBairro" type="string">
+            <column name="empresa_bairro" length="40" />
+        </property>
+        <property name="empresaCidade" type="string">
+            <column name="empresa_cidade" length="40" />
+        </property>
+        <property name="empresaUf" type="string">
+            <column name="empresa_uf" length="2" />
+        </property>
+        <property name="empresaTelefone" type="string">
+            <column name="empresa_telefone" length="15" />
+        </property>
+        <property name="empresaFax" type="string">
+            <column name="empresa_fax" length="15" />
+        </property>
+        <property name="empresaCelular" type="string">
+            <column name="empresa_celular" length="15" />
+        </property>
+        <property name="empresaMail" type="string">
+            <column name="empresa_mail" length="80" />
+        </property>
+        <property name="empresaSite" type="string">
+            <column name="empresa_site" length="40" />
+        </property>
+        <property name="empresaCnpj" type="string">
+            <column name="empresa_cnpj" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

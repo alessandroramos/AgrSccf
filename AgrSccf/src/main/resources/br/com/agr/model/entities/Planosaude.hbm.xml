@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Planosaude" table="planosaude" schema="public" optimistic-lock="version">
+        <id name="planoSaudeId" type="int">
+            <column name="plano_saude_id" />
+              <generator class="sequence">
+                <param name="sequence">planosaude_plano_saude_id_seq</param>
+              </generator>
+        </id>
+        <property name="planoSaudeNome" type="string">
+            <column name="plano_saude_nome" length="80" />
+        </property>
+        <property name="planoSaudeDesc" type="string">
+            <column name="plano_saude_desc" length="500" />
+        </property>
+    </class>
+</hibernate-mapping>

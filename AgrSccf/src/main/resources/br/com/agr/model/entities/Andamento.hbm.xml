@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/05/2015 08:05:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agr.model.entities.Andamento" table="andamento" schema="public" optimistic-lock="version">
+        <id name="andamentoId" type="int">
+            <column name="andamento_id" />
+              <generator class="sequence">
+                <param name="sequence">andamento_andamento_id_seq</param>
+              </generator>
+        </id>
+        <property name="andamentoCodigoAtendimento" type="java.lang.Integer">
+            <column name="andamento_codigo_atendimento" />
+        </property>
+        <property name="andamentoCodigoUsuario" type="java.lang.Integer">
+            <column name="andamento_codigo_usuario" />
+        </property>
+        <property name="andamentoData" type="string">
+            <column name="andamento_data" length="10" />
+        </property>
+        <property name="andamentoHora" type="string">
+            <column name="andamento_hora" length="10" />
+        </property>
+        <property name="andamentoTipo" type="string">
+            <column name="andamento_tipo" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
